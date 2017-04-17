@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TasIx-Tube</string>
+
+
+    <string name="title_activity_search">Поиск</string>
+    <string name="title_activity_video">Плеер</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_activity_favorite">Избранное</string>
+    <string name="title_activity_about">О нас</string>
+
+    <string name="genre_humor">     Юмор            </string>
+    <string name="genre_cinema">    Кино            </string>
+    <string name="genre_music">     Музыка          </string>
+    <string name="genre_sports">    Спорт           </string>
+    <string name="genre_tv">        ТВ              </string>
+    <string name="genre_games">     Игры            </string>
+    <string name="genre_education"> Образование     </string>
+    <string name="genre_family">    Семья</string>
+    <string name="genre_anime">     Аниме</string>
+    <string name="genre_animals">   Животные</string>
+    <string name="genre_auto">      Авто</string>
+    <string name="genre_beauty">Красота</string>
+    <string name="genre_mix">Разное</string>
+    <string name="genre_news">Новости</string>
+    <string name="genre_travel">Путешествия</string>
+    <string name="genre_hi_tech">Технологии</string>
+    <string name="genre_nature">Природа</string>
+    <string name="genre_arts">Искусство</string>
+    <string name="genre_food">Кухня</string>
+    <string name="genre_ads">Реклама</string>
+
+    <string name="settings">Настройки</string>
+    <string name="search">Поиск</string>
+    <string name="about">О нас</string>
+    <string name="share">Поделиться</string>
+
+    <string name="download">Скачать</string>
+    <string name="quality">Качество</string>
+    <string name="exit">Выход</string>
+    <string name="genre_main">Main</string>
+    <string name="genre_latest">Latest</string>
+    <string name="genre_interesting">Interesting</string>
+
+    <string name="tags">TAGS</string>
+    <string name="video_player_settings">Video player settings</string>
+    <string name="back_button_in_controller">Back button in controller</string>
+    <string name="play_and_pause_button_in_player">Play and pause button in player</string>
+    <string name="volume_image_view_in_player">Volume image view in player</string>
+    <string name="press_again_to_exit">Для выхода нажмите назад еще раз!</string>
+    <string name="no_wes_permission">Загрузка данных невозможна без разрешений</string>
+    <string name="download_started">Загрузка началась!</string>
+    <string name="more_button">More options button</string>
+    <string name="add_to_fav">Добавить в избранное</string>
+    <string name="all_author_videos">Все видео автора</string>
+    <string name="android_club_uz">Android Club Uzbekistan</string>
+    <string name="acu_description">Разработка мобильных приложений &amp; Курсы программирования</string>
+    <string name="category_str">Категория:</string>
+    <string name="sort_str">Сортировать по:</string>
+    <string name="upload_date_str">Дата загрузки:</string>
+    <string name="length_str">Длительность:</string>
+    <string name="instructions">Инструкции</string>
+    <string name="added_to_fav">Добавлено в избранное!</string>
+    <string name="language">Язык</string>
+    <string name="clear_fav">Очистить избранное</string>
+    <string name="clear_search_history">Очистить историю поиска</string>
+    <string name="use_external_player">Использовать внешний плеер</string>
+    <string name="fav_list_cleared">Избранное очищено</string>
+    <string name="search_history_cleared">История поиска очищена</string>
+    <string name="recommend_using_app">Советую установить Tas-Ix Tube для просмотра видео!</string>
+    <string name="nothing_found">По вашему запросу ничего найдено</string>
+
+    <array name="ratings">
+        <item>Топ дня</item>
+        <item>Топ 3 дней</item>
+        <item>Топ недели</item>
+        <item>Топ месяца</item>
+        <item>Рекомендованное</item>
+        <item>Интересное</item>
+        <item>Новое</item>
+    </array>
+
+    <array name="cats">
+        <item>Главное   </item>
+        <item>Новое     </item>
+        <item>Интересное</item>
+        <item name="genre_humor">     Юмор            </item>
+        <item name="genre_cinema">    Кино            </item>
+        <item name="genre_music">     Музыка          </item>
+        <item name="genre_sports">    Спорт           </item>
+        <item name="genre_tv">        ТВ              </item>
+        <item name="genre_games">     Игры            </item>
+        <item name="genre_education"> Образование     </item>
+        <item name="genre_family">    Семья</item>
+        <item name="genre_anime">     Аниме</item>
+        <item name="genre_animals">   Животные</item>
+        <item name="genre_auto">      Авто</item>
+        <item name="genre_beauty">Красота</item>
+        <item name="genre_mix">Разное</item>
+        <item name="genre_news">Новости</item>
+        <item name="genre_nature">Природа</item>
+        <item name="genre_hi_tech">Технологии</item>
+        <item name="genre_arts">Искусство</item>
+        <item name="genre_food">Кухня</item>
+        <item name="genre_ads">Реклама</item>
+    </array>
+
+    <array name="filter_cats">
+        <item>Везде</item>
+        <item>Юмор</item>
+        <item>Кино</item>
+        <item>ТВ</item>
+        <item>Игры</item>
+        <item>Музыка</item>
+        <item>Авто</item>
+        <item>Спорт</item>
+        <item>Технологии</item>
+        <item>Обучение</item>
+        <item>Реклама</item>
+        <item>Другое</item>
+        <item>Семья и дети</item>
+        <item>Животные</item>
+        <item>Новости</item>
+        <item>Природа</item>
+        <item>Искусство</item>
+        <item>Разное</item>
+        <item>Еда</item>
+        <item>Аниме</item>
+        <item>Красота</item>
+    </array>
+
+    <array name="sort">
+        <item>Релевантности</item>
+        <item>Дате загрузки</item>
+        <item>Просмотрам</item>
+    </array>
+
+    <array name="date">
+        <item>Все время</item>
+        <item>Сегодня</item>
+        <item>Неделю</item>
+        <item>Месяц</item>
+        <item>Год</item>
+    </array>
+
+    <array name="length">
+        <item>Любая</item>
+        <item>Меньше 10 минут</item>
+        <item>От 10 до 30 минут</item>
+        <item>Больше 30 минут</item>
+    </array>
+
+    <string name="about_app">
+        Tas-Ix Tube - это мобильное приложение для бесплатного просмотра популярных и мэйнстримных видео в сети Tas-Ix.
+        Все видео взяты с популярного узбекского видео сервиса MOVER.UZ. Права на все видеоролики принадлежат авторам.
+    </string>
+
+    <string name="warning">
+        Внимание: использование мобильного интернета может привести к большому расходу интернет трафика, поэтому
+        используйте только домашний интернет или убедитесь, что ваш поставщик услуг предоставляет бесплатный доступ к сайтам Tas-Ix.
+    </string>
+
+    <string name="yusuf">Абдуллаев Юсуф</string>
+    <string name="yusuf_who">android разработчик\nлидер\nплэйбой\nмизантроп</string>
+    <string name="arslan">Тажибаев Арслан</string>
+    <string name="arslan_who">android разработчик\nТНН</string>
+    <string name="timur">Расулев Тимур</string>
+    <string name="timur_who">десигнер, просто десигнер</string>
+    <string name="authors">Авторы</string>
+    <string name="me_as_dev">Me as developer</string>
+    <string name="ars_as_dev">Arslan as developer</string>
+    <string name="timko_as_dev">Timko as developer</string>
+    <string name="how_to_download">1. Как скачать видео?</string>
+    <string name="download_instruction">Для скачивания видео нажмите на кнопку скачивания на странице видео.</string>
+    <string name="how_to_favorite">2. Как добавить видео в избранное?</string>
+    <string name="favorite_instruction">Чтобы добавить видео в избранное нажмите на троеточие в списке и выберите соответствующий пункт</string>
+    <string name="how_to_delete_fav">3. Как очистить избранное?</string>
+    <string name="clear_instruction">Вы можете очистить избранное, а также историю поиска в настройках. К сожаления, пока удалять отдельные видео нельзя, мы добавим данную функцию в следующей версии</string>
+    <string name="how_to_player">4. Что если вам не нравится встроенный плеер?</string>
+    <string name="player_instruction">Мы понимаем, что видео плеер в приложении не идеален и нуждается в значительных доработках. Поэтому, если он вас не устраивает, вы можете использовать внешний плеер включив соответствующий пункт в настройках. Мы будем стараться улучшить плеер в следующих версиях</string>
+    <string name="how_to_help">5. Как помочь авторам?</string>
+    <string name="help_instruction">Если вы хотите помочь авторам, то лучший способ - это оставлять хорошую оценку и отзывы. Так как проект некоммерческий, мы не могли уделять ей много времени в последнее время. Вы наверное заметили, что мы полностью убрали рекламу. Второй способ помочь - делиться! Делитесь приложением со своими друзьями и помогите нам сделать его популярным  :)</string>
+
+    <string name="navigation_drawer_open">Nav Drawer Open</string>
+    <string name="navigation_drawer_close">Nav Drawer Close</string>
+    <string name="video_preview_str">Video item preview image</string>
+    <string name="more_options_button">More options button</string>
+    <string name="test_author">PEWDIEPIE</string>
+    <string name="test_views">2000 VIEWS</string>
+    <string name="test_title">WINE VIDEO</string>
+    <string name="label_views">%s просмотров</string>
+    <string name="test_length">12:55</string>
+    <string name="choose_list_view_type">Choose list view type:</string>
+    <string name="fullscreen_banner_ad_unit_id">ca-app-pub-6134429316117153/4936328624</string>
+    <string name="main_activity_footer_ad_unit_id">ca-app-pub-6134429316117153/1831965823</string>
+    <string name="reward_download_ad_unit_id">ca-app-pub-6134429316117153/8240651021</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="image_in_intro">Big image in intro slider</string>
+    <string name="bottom_banner_id">ca-app-pub-6134429316117153/9750639826</string>
+    <string name="download_reward_ad_id">ca-app-pub-6134429316117153/2227373026</string>
+    <string name="interstitial_after_player_id">ca-app-pub-6134429316117153/3704106220</string>
+    <string name="unknown_error">Что-то пошло не так</string>
+    <string name="mover_uz">MOVER.UZ</string>
+
+    <string name="to_fav">В избранное</string>
+    <string name="hashtags">Тэги</string>
+</resources>

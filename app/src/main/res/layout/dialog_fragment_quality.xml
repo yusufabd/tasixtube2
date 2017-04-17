@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/colorPrimary">
+
+    <uz.androidclub.tas_ixtube.utils.CusFntTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_480"
+        android:text="480"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"/>
+
+    <uz.androidclub.tas_ixtube.utils.CusFntTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_360"
+        android:text="360"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"/>
+
+    <uz.androidclub.tas_ixtube.utils.CusFntTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_240"
+        android:text="240"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"/>
+</LinearLayout>

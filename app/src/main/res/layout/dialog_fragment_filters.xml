@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/filter_spinners_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/category_str"
+            android:padding="@dimen/filters_text_padding"
+            android:textAppearance="@style/FiltersDialogTextAppearance"/>
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_filter_category"
+            android:entries="@array/cats"
+            android:layout_margin="@dimen/video_preview_margin" />
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sort_str"
+            android:padding="@dimen/filters_text_padding"
+            android:textAppearance="@style/FiltersDialogTextAppearance"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_filter_sort"
+            android:entries="@array/sort"
+            android:layout_margin="@dimen/video_preview_margin"/>
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_date_str"
+            android:padding="@dimen/filters_text_padding"
+            android:textAppearance="@style/FiltersDialogTextAppearance"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_filter_date"
+            android:entries="@array/date"
+            android:layout_margin="@dimen/video_preview_margin"/>
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/length_str"
+            android:padding="@dimen/filters_text_padding"
+            android:textAppearance="@style/FiltersDialogTextAppearance"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_filter_length"
+            android:entries="@array/length"
+            android:layout_margin="@dimen/video_preview_margin"/>
+    </LinearLayout>
+
+    <uz.androidclub.tas_ixtube.utils.CusFntTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_search"
+        android:text="@string/search"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="@dimen/video_preview_margin"
+        android:textSize="18sp"
+        android:layout_below="@+id/filter_spinners_container"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

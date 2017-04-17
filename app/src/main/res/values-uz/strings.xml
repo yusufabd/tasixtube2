@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TasIx-Tube</string>
+
+    <string name="title_activity_search">Qidiruv</string>
+    <string name="title_activity_video">Pleyer</string>
+    <string name="title_activity_settings">Sozlamaral</string>
+    <string name="title_activity_favorite">Sevimli</string>
+    <string name="title_activity_about">Biz haqimizda</string>
+
+
+    <string name="genre_humor">Kulgili</string>
+    <string name="genre_cinema">Kino</string>
+    <string name="genre_music">Musiqa</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_tv">TV</string>
+    <string name="genre_games">O\'yinlar</string>
+    <string name="genre_education">Ta\'lim</string>
+    <string name="genre_family">Oila</string>
+    <string name="genre_anime">Anime</string>
+    <string name="genre_animals">Hayvonlar</string>
+    <string name="genre_auto">Avto</string>
+    <string name="genre_beauty">Go\'zallik</string>
+    <string name="genre_mix">Aralash</string>
+    <string name="genre_news">Yangiliklar</string>
+    <string name="genre_travel">Sayohat</string>
+    <string name="genre_hi_tech">Texnologiyalar</string>
+    <string name="genre_nature">Tabiat</string>
+    <string name="genre_arts">San\'at</string>
+    <string name="genre_food">Oziq-ovqat</string>
+    <string name="genre_ads">Reklama</string>
+
+    <string name="settings">Sozlamalar</string>
+    <string name="search">Qidirish</string>
+    <string name="about">Biz haqimizda</string>
+    <string name="share">Ulashing</string>
+
+    <string name="download">Yuklab olish</string>
+    <string name="quality">Sifat</string>
+    <string name="exit">Chiqish</string>
+    <string name="genre_main">Asosiy</string>
+    <string name="genre_latest">Yangi</string>
+    <string name="genre_interesting">Qiziqarli</string>
+    <string name="android_club_uz">Android Club Uzbekistan</string>
+    <string name="acu_description">Mobil Ilovalar Yaratish &amp; Dasturlash Kurslari</string>
+    <string name="category_str">Kategoriya:</string>
+    <string name="sort_str">Saralash:</string>
+    <string name="upload_date_str">Qo\'shilgan vaqti:</string>
+    <string name="length_str">Uzunligi:</string>
+    <string name="instructions">Qoidalar</string>
+
+    <array name="ratings">
+        <item>Bugungi top</item>
+        <item>3 kunlik top</item>
+        <item>Haftalik top</item>
+        <item>Oylik top</item>
+        <item>Tavsiya etilgan</item>
+        <item>Qiziqarli</item>
+        <item>Yangi</item>
+    </array>
+
+    <array name="cats">
+        <item>Asosiy   </item>
+        <item>Yangi     </item>
+        <item>Qiziq</item>
+        <item name="genre_humor">Kulgili</item>
+        <item name="genre_cinema">Kino</item>
+        <item name="genre_music">Musiqa</item>
+        <item name="genre_sports">Sport</item>
+        <item name="genre_tv">TV</item>
+        <item name="genre_games">O\'yinlar</item>
+        <item name="genre_education">Ta\'lim</item>
+        <item name="genre_family">Oila</item>
+        <item name="genre_anime">Anime</item>
+        <item name="genre_animals">Hayvonlar</item>
+        <item name="genre_auto">Avto</item>
+        <item name="genre_beauty">Go\'zallik</item>
+        <item name="genre_mix">Aralash</item>
+        <item name="genre_news">Yangiliklar</item>
+        <item name="genre_nature">Tabiat</item>
+        <item name="genre_hi_tech">Texnologiyalar</item>
+        <item name="genre_arts">San\'at</item>
+        <item name="genre_food">Oziq-ovqat</item>
+        <item name="genre_ads">Reklama</item>
+    </array>
+
+    <array name="filter_cats">
+        <item>Barcha yerda</item>
+        <item>Kulgili</item>
+        <item>Kino</item>
+        <item>TV</item>
+        <item>O\'yinlar</item>
+        <item>Musiqa</item>
+        <item>Avto</item>
+        <item>Sport</item>
+        <item>Texnologiyalar</item>
+        <item>Ta\'lim</item>
+        <item>Reklama</item>
+        <item>Boshqa</item>
+        <item>Oila</item>
+        <item>Hayvonlar</item>
+        <item>Yangiliklar</item>
+        <item>Tabiat</item>
+        <item>San\'at</item>
+        <item>Har xil</item>
+        <item>Oziq-ovqat</item>
+        <item>Anima</item>
+        <item>Go\'zallik</item>
+    </array>
+
+    <array name="sort">
+        <item>Relevantlik</item>
+        <item>Qo\'shilgan kun</item>
+        <item>Ko\'rilgan soni</item>
+    </array>
+
+    <array name="date">
+        <item>Barcha vaqt</item>
+        <item>Bugun</item>
+        <item>Bir hafta</item>
+        <item>Bir oy</item>
+        <item>Bir yil</item>
+    </array>
+
+    <array name="length">
+        <item>Barcha</item>
+        <item>10 daqiqadan kam</item>
+        <item>10 daqiqadan 30 daqiqagacha</item>
+        <item>30 daqiqadan kop</item>
+    </array>
+
+    <string name="tags">TAGS</string>
+    <string name="video_player_settings">Video player settings</string>
+    <string name="back_button_in_controller">Back button in controller</string>
+    <string name="play_and_pause_button_in_player">Play and pause button in player</string>
+    <string name="volume_image_view_in_player">Volume image view in player</string>
+    <string name="press_again_to_exit">Chiqish uchun yana bir marta bosing!</string>
+    <string name="no_wes_permission">Ruxsatnomalarsiz yuklash mumkin emas!</string>
+    <string name="download_started">Yuklash boshlandi!</string>
+    <string name="more_button">More options button</string>
+    <string name="add_to_fav">Sevimli ro\'yxatiga qo\'shish</string>
+    <string name="all_author_videos">Bu muallifning boshqa videolari</string>
+    <string name="added_to_fav">Sevimli ro\'yxatiga qo\'shildi!</string>
+    <string name="language">Til</string>
+    <string name="clear_fav">Sevimli ro\'yxatini tozalash</string>
+    <string name="clear_search_history">Qidiruv tarixini tozalash</string>
+    <string name="use_external_player">Boshqa player orqali ko\'rish</string>
+    <string name="fav_list_cleared">Sevimli ro\'yxati tozalandi</string>
+    <string name="search_history_cleared">Qidiruv tarixi tozalandi</string>
+    <string name="recommend_using_app">Video ko\'rish uchun Tas-Ix Tubeni o\'rnatishni maslahat beraman!</string>
+    <string name="nothing_found">So\'rovingiz bo\'yicha hech narsa topilmadi</string>
+     <string name="about_app">
+        Tas-Ix Tube bu mashhur va meynstrim videoroliklarni Tas-Ix tarmoqida ko\'rish uchun mobil ilova.
+        Barcha roliklar MOVER.UZ saytidan olingan. Video roliklarga huquqlar ularning mualliflariga tegishli.
+    </string>
+
+    <string name="warning">
+        Diqqat: mobil internetdan foydalanish katta harajatlarga olib kelishi mumkin, shuning uchun uy internetidan foydalaning yoki
+        operatoringiz Tas-Ix tarmoqiga bepul kirish imkoniyatini berishiga ishonch hosil qiling.
+    </string>
+
+    <string name="yusuf">Abdullaev Yusuf</string>
+    <string name="yusuf_who">android dasturchi\nyetakchi\nplayboy\nmizantrop</string>
+    <string name="arslan">Tajibaev Arslan</string>
+    <string name="arslan_who">android dasturchi\nChSE</string>
+    <string name="timur">Rasulev Timur</string>
+    <string name="timur_who">designer, shunchaki designer</string>
+    <string name="authors">Authors</string>
+    <string name="me_as_dev">Me as developer</string>
+    <string name="ars_as_dev">Arslan as developer</string>
+    <string name="timko_as_dev">Timko as developer</string>
+    <string name="how_to_download">1. Как скачать видео?</string>
+    <string name="download_instruction">Для скачивания видео нажмите на кнопку скачивания в плеере.</string>
+    <string name="how_to_favorite">2. Как добавить видео в избранное?</string>
+    <string name="favorite_instruction">Чтобы добавить видео в избранное нажмите на троеточие в списке и выберите соответсвующий пункт</string>
+    <string name="how_to_delete_fav">3. Как очистить избранное?</string>
+    <string name="clear_instruction">Вы можете очистить избранное, а также историю поиска в настройках. К сожаления, пока удалять отдельные видео нельзя, мы добавим данную функцию в следующей версии</string>
+    <string name="how_to_player">4. Что если вам не нравится встроенный плеер?</string>
+    <string name="player_instruction">Мы понимаем, что видео плеер в приложении не идеален и нуждается в значительных доработках. Поэтому, если он вас не устраивает, вы можете использовать внешний плеер включив ссответствующий пункт в настройках. Мы будем стараться улучшить плеер в следующих версиях</string>
+    <string name="how_to_help">5. Как помочь авторам?</string>
+    <string name="help_instruction">Если вы хотите помочь авторам, то лучший способ - это оставлять хорошую оценку и отзывы. Так как проект некоммерческий, мы не могли уделять ей много времени в последнее время. Вы наверное заметили, что мы полностью убрали рекламу. Второй способ помочь - делиться! Делитесь приложением со своими друзьями и помогите нам сделать ее популярной  :)</string>
+
+    <string name="navigation_drawer_open">Nav Drawer Open</string>
+    <string name="navigation_drawer_close">Nav Drawer Close</string>
+    <string name="video_preview_str">Video item preview image</string>
+    <string name="more_options_button">More options button</string>
+    <string name="test_author">PEWDIEPIE</string>
+    <string name="test_views">2000 VIEWS</string>
+    <string name="test_title">WINE VIDEO</string>
+    <string name="label_views">%s marta ko\'rildi</string>
+    <string name="test_length">12:55</string>
+    <string name="choose_list_view_type">Choose list view type:</string>
+    <string name="fullscreen_banner_ad_unit_id">ca-app-pub-6134429316117153/4936328624</string>
+    <string name="main_activity_footer_ad_unit_id">ca-app-pub-6134429316117153/1831965823</string>
+    <string name="reward_download_ad_unit_id">ca-app-pub-6134429316117153/8240651021</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="image_in_intro">Big image in intro slider</string>
+    <string name="bottom_banner_id">ca-app-pub-6134429316117153/9750639826</string>
+    <string name="download_reward_ad_id">ca-app-pub-6134429316117153/2227373026</string>
+    <string name="interstitial_after_player_id">ca-app-pub-6134429316117153/3704106220</string>
+    <string name="unknown_error">Aniqlanmagan xatolik</string>
+    <string name="mover_uz">MOVER.UZ</string>
+    <string name="to_fav">Sevimlilarga</string>
+    <string name="hashtags">Teglar</string>
+</resources>

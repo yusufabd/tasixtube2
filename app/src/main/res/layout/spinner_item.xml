@@ -1,0 +1,13 @@
+<uz.androidclub.tas_ixtube.utils.CusFntTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner_text_view"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:paddingRight="@dimen/dropdown_padding_right"
+    android:paddingEnd="@dimen/dropdown_padding_right"
+    android:paddingLeft="@dimen/dropdown_padding_left"
+    android:paddingStart="@dimen/dropdown_padding_left"
+    android:textColor="@color/colorAccent"/>

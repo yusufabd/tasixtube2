@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">TasIx-Tube</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_video">Player</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_favorite">Favorite</string>
+    <string name="title_activity_about">About</string>
+
+    <string name="genre_humor"> Humor   </string>
+    <string name="genre_cinema">Cinema  </string>
+    <string name="genre_music"> Music   </string>
+    <string name="genre_sports">Sports  </string>
+    <string name="genre_tv">    TV      </string>
+    <string name="genre_games"> Games   </string>
+    <string name="genre_education">Education</string>
+    <string name="genre_family">Family</string>
+    <string name="genre_anime">Anime</string>
+    <string name="genre_animals">Animals</string>
+    <string name="genre_auto">Auto</string>
+    <string name="genre_beauty">Beauty</string>
+    <string name="genre_mix">Mixed</string>
+    <string name="genre_news">News</string>
+    <string name="genre_travel">Travel</string>
+    <string name="genre_hi_tech">Technologies</string>
+    <string name="genre_nature">Nature</string>
+    <string name="genre_arts">Art</string>
+    <string name="genre_food">Food</string>
+    <string name="genre_ads">Ads</string>
+
+    <string name="genre_main">       Main       </string>
+    <string name="genre_latest"> Latest     </string>
+    <string name="genre_interesting">Interesting</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+
+    <string name="navigation_drawer_open">Nav Drawer Open</string>
+    <string name="navigation_drawer_close">Nav Drawer Close</string>
+    <string name="video_preview_str">Video item preview image</string>
+    <string name="more_options_button">More options button</string>
+    <string name="test_author">PEWDIEPIE</string>
+    <string name="test_views">2000 VIEWS</string>
+    <string name="label_views">%s views</string>
+    <string name="test_title">WINE VIDEO</string>
+    <string name="test_length">12:55</string>
+    <string name="choose_list_view_type">Choose list view type:</string>
+    <string name="fullscreen_banner_ad_unit_id">ca-app-pub-6134429316117153/4936328624</string>
+    <string name="main_activity_footer_ad_unit_id">ca-app-pub-6134429316117153/1831965823</string>
+    <string name="reward_download_ad_unit_id">ca-app-pub-6134429316117153/8240651021</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="image_in_intro">Big image in intro slider</string>
+    <string name="bottom_banner_id">ca-app-pub-6134429316117153/9750639826</string>
+    <string name="download_reward_ad_id">ca-app-pub-6134429316117153/2227373026</string>
+    <string name="interstitial_after_player_id">ca-app-pub-6134429316117153/3704106220</string>
+    <string name="unknown_error">Something went wrong</string>
+    <string name="mover_uz">MOVER.UZ</string>
+
+
+    <string name="download">Download</string>
+    <string name="quality">Quality</string>
+    <string name="exit">Exit</string>
+    <string name="clear_search_history">Clear search history</string>
+    <string name="use_external_player">Use external player</string>
+
+    <string name="player_preview">Player preview</string>
+    <string name="tags">TAGS</string>
+    <string name="video_player_settings">Video player settings</string>
+    <string name="back_button_in_controller">Back button in controller</string>
+    <string name="play_and_pause_button_in_player">Play and pause button in player</string>
+    <string name="volume_image_view_in_player">Volume image view in player</string>
+    <string name="press_again_to_exit">Press once again to exit!</string>
+    <string name="no_wes_permission">Can not download without permission</string>
+    <string name="download_started">Download started!</string>
+    <string name="more_button">More options button</string>
+    <string name="add_to_fav">Add to favorites</string>
+    <string name="all_author_videos">View all videos by user</string>
+    <string name="android_club_uz">Android Club Uzbekistan</string>
+    <string name="acu_description">Mobile Applications Development &amp; Programming Courses</string>
+    <string name="category_str">Category:</string>
+    <string name="sort_str">Sort by:</string>
+    <string name="upload_date_str">Upload Date:</string>
+    <string name="length_str">Length:</string>
+    <string name="added_to_fav">Added to favorites!</string>
+    <string name="language">Language</string>
+    <string name="clear_fav">Clear favorite video list</string>
+    <string name="instructions">Instructions</string>
+    <string name="fav_list_cleared">Favorite video list cleared</string>
+    <string name="search_history_cleared">Search history cleared</string>
+
+    <array name="ratings">
+        <item>Top of the day</item>
+        <item>Top of three day</item>
+        <item>Top of the week</item>
+        <item>Top of the month</item>
+        <item>Recommended</item>
+        <item>Interesting</item>
+        <item>New</item>
+    </array>
+
+    <array name="cats">
+        <item>Main</item>
+        <item>Latest</item>
+        <item>Interesting</item>
+        <item name="genre_humor">Humor</item>
+        <item name="genre_cinema">Cinema</item>
+        <item name="genre_music">Music</item>
+        <item name="genre_sports">Sports</item>
+        <item name="genre_tv">TV</item>
+        <item name="genre_games">Games</item>
+        <item name="genre_education">Education</item>
+        <item name="genre_family">Family</item>
+        <item name="genre_anime">Anime</item>
+        <item name="genre_animals">Animals</item>
+        <item name="genre_auto">Auto</item>
+        <item name="genre_beauty">Beauty</item>
+        <item name="genre_mix">Mixed</item>
+        <item name="genre_news">News</item>
+        <item name="genre_hi_tech">Technologies</item>
+        <item name="genre_nature">Nature</item>
+        <item name="genre_arts">Art</item>
+        <item name="genre_food">Food</item>
+        <item name="genre_ads">Ads</item>
+    </array>
+
+    <array name="filter_cats">
+        <item>Everywhere</item>
+        <item>Humor</item>
+        <item>Cinema</item>
+        <item>TV</item>
+        <item>Games</item>
+        <item>Music</item>
+        <item>Auto</item>
+        <item>Sport</item>
+        <item>Hi-Tech</item>
+        <item>Education</item>
+        <item>Ads</item>
+        <item>Others</item>
+        <item>Family</item>
+        <item>Animals</item>
+        <item>News</item>
+        <item>Nature</item>
+        <item>Arts</item>
+        <item>Mix</item>
+        <item>Food</item>
+        <item>Anime</item>
+        <item>Beauty</item>
+    </array>
+
+    <array name="sort">
+        <item>Relevance</item>
+        <item>Upload date</item>
+        <item>Views</item>
+    </array>
+
+    <array name="date">
+        <item>Any</item>
+        <item>Today</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+    </array>
+
+    <array name="length">
+        <item>Any</item>
+        <item>Less than 10 minutes</item>
+        <item>10 to 30 minutes</item>
+        <item>More than 30 minutes</item>
+    </array>
+
+    <array name="lang">
+        <item>English</item>
+        <item>Русский</item>
+        <item>O\'zbekcha</item>
+    </array>
+
+
+    <string name="recommend_using_app">I recommend you to install Tas-Ix Tube to watch videos!</string>
+
+
+    <string name="about_app">
+        Tas-Ix Tube is the mobile application for watching popular mainstream videos free of charge in Tas-Ix network.
+        All videos in the app are taken from famous uzbek video service MOVER.UZ.
+    </string>
+
+    <string name="warning">
+        Warning: using mobile internet may lead to big data expense, thus use only home internet or make sure that your
+        network provider provides free access to Tas-Ix sites. All rights for videos belong to their authors.
+    </string>
+
+    <string name="yusuf">Abdullaev Yusuf</string>
+    <string name="yusuf_who">android developer\nleader\nplayboy\nmisanthrop</string>
+    <string name="arslan">Tajibaev Arslan</string>
+    <string name="arslan_who">android developer\nCNN</string>
+    <string name="timur">Rasulev Timur</string>
+    <string name="timur_who">designer, just a designer</string>
+    <string name="authors">Authors</string>
+    <string name="me_as_dev">Me as developer</string>
+    <string name="ars_as_dev">Arslan as developer</string>
+    <string name="timko_as_dev">Timko as developer</string>
+    <string name="how_to_download">1. How to download video?</string>
+    <string name="download_instruction">To download video click on download button in video player</string>
+    <string name="how_to_favorite">2. How to add video to favorite list?</string>
+    <string name="favorite_instruction">To add video to favorite list click on more options button (ellipsis) in video list and click approprite paragraph</string>
+    <string name="how_to_delete_fav">3. How clear favorite list?</string>
+    <string name="clear_instruction">You can clear favorite list as well as search history from settings. Unfortunately, you can not delete a video from favorite list, we will implement such functionality in the next version of the app</string>
+    <string name="how_to_player">4. What if you do not like the native player?</string>
+    <string name="player_instruction">We understand that video player in the app is not perfect and has many functions to improve, thus if the player is not satisfactory for you you can switch on using external player. We will make our best to improve the player in next versions.</string>
+    <string name="how_to_help">5. How to help authors?</string>
+    <string name="help_instruction">If you want to help authors you have several ways to do so. First, your reviews and good marks are the best motivation for us. You may thought that we do not read your reviews, but we do and try to improve our app every day. However, the project is not commercial and lately we could not allocate too much time for it. As you could notice, now the app is completely ad-free. Second way to help us is sharing! Share the app with your friends and help us to make it popular! Pleeeassseeee :)</string>
+    <string name="quality_not_available">Such quality is not available for this video</string>
+    <string name="to_fav">To favorite</string>
+    <string name="hashtags">Tags</string>
+    <string name="nothing_found">Nothing found for this query</string>
+    <string name="you_sure_download">Are you sure?</string>
+    <string name="folder">Folder: %s</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove_from_fav">Remove from favorite list</string>
+    <string name="removed_from_fav">Video removed from favorite list</string>
+</resources>

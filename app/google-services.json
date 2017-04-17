@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "571376957036",
+    "firebase_url": "https://tas-ix-tube.firebaseio.com",
+    "project_id": "tas-ix-tube",
+    "storage_bucket": "tas-ix-tube.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571376957036:android:450c23af8bab572f",
+        "android_client_info": {
+          "package_name": "net.androidclub.tas_ixtube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571376957036-7j4m1o1dpuchs68t2hb03b5rfe1a4i36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.androidclub.tas_ixtube",
+            "certificate_hash": "1667976a3611c79bfe3a816d77598981a078eb29"
+          }
+        },
+        {
+          "client_id": "571376957036-h4s6m58cjq0utlih3u2rpah0io67inae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnvSvVjV4vRlw94T9x20nThxeejnopVe8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571376957036-h4s6m58cjq0utlih3u2rpah0io67inae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

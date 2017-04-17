@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <uz.androidclub.tas_ixtube.utils.CusFntTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_title"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toStartOf="@+id/arrow_down_button"
+                android:layout_toLeftOf="@+id/arrow_down_button"
+                android:gravity="start"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                android:background="@null"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/arrow_down_button"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_total_views"
+            android:textSize="12sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="9dp"
+            android:layout_gravity="end">
+
+
+            <TextView
+                android:id="@+id/bottom_quality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_quality"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:text="@string/download"
+                android:textSize="@dimen/small_text_size"
+                android:gravity="center_horizontal"
+                android:visibility="gone"/>
+
+            <uz.androidclub.tas_ixtube.utils.CusFntTextView
+                android:id="@+id/bottom_download"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_action_download"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:text="@string/download"
+                android:textSize="@dimen/small_text_size"
+                android:gravity="center_horizontal"/>
+
+
+            <uz.androidclub.tas_ixtube.utils.CusFntTextView
+                android:id="@+id/top_share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_action_send"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:text="@string/share"
+                android:textSize="@dimen/small_text_size"
+                android:gravity="center_horizontal"/>
+
+
+            <uz.androidclub.tas_ixtube.utils.CusFntTextView
+                android:id="@+id/bottom_star"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_action_fav"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:text="@string/to_fav"
+                android:textSize="@dimen/small_text_size"
+                android:gravity="center_horizontal"/>
+
+
+            <uz.androidclub.tas_ixtube.utils.CusFntTextView
+                android:id="@+id/bottom_tags"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/ic_action_tags"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:text="@string/hashtags"
+                android:textSize="@dimen/small_text_size"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/transGray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_author"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/authors" />
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_author"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/desc_container"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/transGray"/>
+
+        <uz.androidclub.tas_ixtube.utils.CusFntTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_desc"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_margin="8dp"
+            android:text="Наш сайт: http://www.huaweidevice.uz/
+                              Мы в соц. сетях:
+                              Facebook: https://http://www.facebook.com/HuaweimobileUZ/
+                              Instagram: http://instagram.com/huawei_uz/
+                              Telegram: https://t.me/HuaweiMobileUz"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transGray"/>
+
+</LinearLayout>
