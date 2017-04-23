@@ -6,6 +6,8 @@ package uz.androidclub.tas_ixtube.utils;
 
 public interface Constants {
     String LOG_TAG = "my_custom_log";
+    String EXTRA_KEY_LINK = "extra_link";
+    String EXTRA_KEY_TITLE = "extra_title";
 
     String MAIN_PAGE = "http://mover.uz/";
     String VIDEO_LINK = "http://v.mover.uz/";
@@ -63,6 +65,8 @@ public interface Constants {
     String KEY_LIST_TYPE = "list_type";
     String KEY_EXTERNAL_PLAYER = "external_player";
     String KEY_LANG = "lang";
+    String KEY_LAST_MODIFIED = "last_modified";
+    String KEY_LAST_PROGRESS = "progress";
 
     int LANG_EN = 364;
     int LANG_RU = 787;

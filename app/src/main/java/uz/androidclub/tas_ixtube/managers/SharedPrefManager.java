@@ -44,4 +44,22 @@ public class SharedPrefManager implements Constants {
         editor.putBoolean(KEY_EXTERNAL_PLAYER, isExternal);
         editor.apply();
     }
+
+    public void setLastModified(String lastModified){
+        editor.putString(KEY_LAST_MODIFIED, lastModified);
+        editor.apply();
+    }
+
+    public String getLastModified(){
+        return preferences.getString(KEY_LAST_MODIFIED, "");
+    }
+
+    public void setProgress(int prgrs){
+        editor.putInt(KEY_LAST_MODIFIED, prgrs);
+        editor.apply();
+    }
+
+    public int getProgress(){
+        return preferences.getInt(KEY_LAST_PROGRESS, 0);
+    }
 }

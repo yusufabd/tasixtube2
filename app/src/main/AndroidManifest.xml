@@ -16,8 +16,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -26,19 +26,23 @@
             android:name=".activities.SearchActivity"
             android:label="@string/title_activity_search"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.TagsActivity"
+        <activity
+            android:name=".activities.TagsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.AboutActivity"
+        <activity
+            android:name=".activities.AboutActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.FavoriteActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".activities.InstructionsActivity"
+        <activity
+            android:name=".activities.FavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.InstructionsActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".activities.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:theme="@style/FullscreenTheme"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,8 +53,8 @@
             android:name=".activities.IntroSlidersActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash"
-            android:theme="@style/FullscreenTheme"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -58,9 +62,13 @@
 
         <activity
             android:name=".activities.JCPlayer"
-            android:theme="@style/FullscreenTheme"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+
+        <service
+            android:name=".service.DownloadService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
