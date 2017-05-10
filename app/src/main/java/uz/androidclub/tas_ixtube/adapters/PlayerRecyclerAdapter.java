@@ -12,7 +12,6 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,20 +23,8 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.concurrent.Callable;
 
-import rx.Observable;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 import uz.androidclub.tas_ixtube.R;
 import uz.androidclub.tas_ixtube.activities.JCPlayer;
 import uz.androidclub.tas_ixtube.activities.MainActivity;
@@ -48,6 +35,7 @@ import uz.androidclub.tas_ixtube.managers.DatabaseManager;
 import uz.androidclub.tas_ixtube.managers.SharedPrefManager;
 import uz.androidclub.tas_ixtube.models.Video;
 import uz.androidclub.tas_ixtube.presenter.PlayerPresenter;
+import uz.androidclub.tas_ixtube.service.DownloadService;
 import uz.androidclub.tas_ixtube.utils.Constants;
 import uz.androidclub.tas_ixtube.utils.StringUtils;
 
@@ -64,6 +52,7 @@ public class PlayerRecyclerAdapter extends RecyclerView.Adapter<PlayerRecyclerAd
     private SharedPrefManager mPref;
     private FragmentManager mFragmentManager;
     private DatabaseManager mDB;
+    private Intent mDownloadIntent;
 
     public PlayerRecyclerAdapter(Video obj, Context mCtx, FragmentManager  fm) {
         this.mCtx = mCtx;
@@ -232,49 +221,11 @@ public class PlayerRecyclerAdapter extends RecyclerView.Adapter<PlayerRecyclerAd
     }
 
     void startDownload(){
-        Observable.fromCallable(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                try {
-                    URL u = new URL(mObject.getMediumQualityVideo());
-                    InputStream is = u.openStream();
-
-                    DataInputStream dis = new DataInputStream(is);
-
-                    byte[] buffer = new byte[1024];
-                    int length;
-
-                    FileOutputStream fos =
-                            new FileOutputStream(new File(Environment.getExternalStorageDirectory()
-                                    + "/Download/" + mObject.getTitle()));
-                    while ((length = dis.read(buffer))>0) {
-                        fos.write(buffer, 0, length);
-                    }
-
-                } catch (MalformedURLException mue) {
-                    Log.e("SYNC getUpdate", "malformed url error", mue);
-                } catch (IOException ioe) {
-                    Log.e("SYNC getUpdate", "io error", ioe);
-                } catch (SecurityException se) {
-                    Log.e("SYNC getUpdate", "security error", se);
-                }
-                return null;
-            }
-        }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<String>() {
-            @Override
-            public void onCompleted() {
-                StringUtils.showToast(mCtx, R.string.download_started);
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onNext(String s) {
-            }
-        });
+        mDownloadIntent = new Intent(mCtx, DownloadService.class);
+        mDownloadIntent.setAction(ACTION_DOWNLOAD);
+        mDownloadIntent.putExtra(EXTRA_KEY_LINK, mObject.getMediumQualityVideo());
+        mDownloadIntent.putExtra(EXTRA_KEY_TITLE, mObject.getTitle());
+        mCtx.startService(mDownloadIntent);
     }
 
     class VideoViewHolder extends RecyclerView.ViewHolder{

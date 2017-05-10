@@ -68,7 +68,8 @@
 
         <service
             android:name=".service.DownloadService"
-            android:exported="false"></service>
+            android:exported="true"
+            android:enabled="true"/>
     </application>
 
 </manifest>

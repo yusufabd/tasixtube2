@@ -152,7 +152,7 @@ public class ResumableDownloader {
         conn = (HttpURLConnection) url
                 .openConnection(); // Open connection to URL.
         conn.setDoInput(true);
-        conn.setDoOutput(true);
+//        conn.setDoOutput(true);
         conn.setReadTimeout(timeout);
         conn.setConnectTimeout(timeout);
         return conn;

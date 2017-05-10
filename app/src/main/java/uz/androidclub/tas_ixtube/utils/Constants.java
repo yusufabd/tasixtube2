@@ -68,6 +68,14 @@ public interface Constants {
     String KEY_LAST_MODIFIED = "last_modified";
     String KEY_LAST_PROGRESS = "progress";
 
+    String ACTION_DOWNLOAD = "action_download";
+    String ACTION_PAUSE = "action_pause";
+    String ACTION_CANCEL = "action_cancel";
+    String ACTION_RESUME = "action_resume";
+    int REQUEST_CODE_PAUSE = 369;
+    int REQUEST_CODE_CANCEL = 963;
+    int REQUEST_CODE_RESUME = 693;
+
     int LANG_EN = 364;
     int LANG_RU = 787;
     int LANG_UZ = 892;

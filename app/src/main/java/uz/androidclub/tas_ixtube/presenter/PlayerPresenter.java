@@ -1,40 +1,30 @@
 package uz.androidclub.tas_ixtube.presenter;
 
 import android.Manifest;
-import android.app.DownloadManager;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
-import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AlertDialog;
-
-import com.koushikdutta.async.future.FutureCallback;
-import com.koushikdutta.ion.Ion;
-import com.koushikdutta.ion.ProgressCallback;
-
-import uz.androidclub.tas_ixtube.activities.JCPlayer;
-import uz.androidclub.tas_ixtube.models.Video;
-import uz.androidclub.tas_ixtube.utils.StringUtils;
-import uz.androidclub.tas_ixtube.R;
-import uz.androidclub.tas_ixtube.interfaces.PlayerContract;
-import uz.androidclub.tas_ixtube.managers.DatabaseManager;
-import uz.androidclub.tas_ixtube.parsers.WatchPageParser;
-import uz.androidclub.tas_ixtube.utils.Constants;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-import java.io.File;
 import java.util.concurrent.Callable;
 
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
+import uz.androidclub.tas_ixtube.R;
+import uz.androidclub.tas_ixtube.activities.JCPlayer;
+import uz.androidclub.tas_ixtube.interfaces.PlayerContract;
+import uz.androidclub.tas_ixtube.managers.DatabaseManager;
+import uz.androidclub.tas_ixtube.models.Video;
+import uz.androidclub.tas_ixtube.parsers.WatchPageParser;
+import uz.androidclub.tas_ixtube.service.DownloadService;
+import uz.androidclub.tas_ixtube.utils.Constants;
+import uz.androidclub.tas_ixtube.utils.StringUtils;
 
 /**
  * Created by yusufabd on 3/4/2017.
@@ -48,6 +38,7 @@ public class PlayerPresenter implements PlayerContract.Presenter, Constants{
     private DatabaseManager mDB;
     private Video mObject;
     private int mQuality = QUALITY_360;
+    private Intent mDownloadIntent;
 
     public PlayerPresenter(Context ctx, PlayerContract.View mView, Video object) {
         mCtx = ctx;
@@ -114,28 +105,31 @@ public class PlayerPresenter implements PlayerContract.Presenter, Constants{
                 break;
         }
 
-        AlertDialog dialog = new AlertDialog.Builder(mCtx)
-                .setTitle(R.string.download)
-                .setMessage(mCtx.getString(R.string.folder, Environment.DIRECTORY_DOWNLOADS))
-                .setNegativeButton(R.string.start, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        DownloadManager.Request r = new DownloadManager.Request(Uri.parse(mObject.getMediumQualityVideo()));
-                        r.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "");
-                        r.allowScanningByMediaScanner();
-                        r.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);
-                        DownloadManager dm = (DownloadManager) mCtx.getSystemService(Context.DOWNLOAD_SERVICE);
-                        dm.enqueue(r);
-                        StringUtils.showToast(mCtx, R.string.download_started);
-                    }
-                }).setPositiveButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                }).create();
-
-        dialog.show();
+        mDownloadIntent = new Intent(mCtx, DownloadService.class);
+        mDownloadIntent.setAction(ACTION_DOWNLOAD);
+        mCtx.startService(mDownloadIntent);
+//        AlertDialog dialog = new AlertDialog.Builder(mCtx)
+//                .setTitle(R.string.download)
+//                .setMessage(mCtx.getString(R.string.folder, Environment.DIRECTORY_DOWNLOADS))
+//                .setNegativeButton(R.string.start, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        DownloadManager.Request r = new DownloadManager.Request(Uri.parse(mObject.getMediumQualityVideo()));
+//                        r.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "");
+//                        r.allowScanningByMediaScanner();
+//                        r.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);
+//                        DownloadManager dm = (DownloadManager) mCtx.getSystemService(Context.DOWNLOAD_SERVICE);
+//                        dm.enqueue(r);
+//                        StringUtils.showToast(mCtx, R.string.download_started);
+//                    }
+//                }).setPositiveButton(R.string.cancel, new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        dialog.dismiss();
+//                    }
+//                }).create();
+//
+//        dialog.show();
 
     }
 

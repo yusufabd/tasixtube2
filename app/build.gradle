@@ -63,6 +63,7 @@ dependencies {
     compile('com.crashlytics.sdk.android:crashlytics-ndk:1.1.6@aar') {
         transitive = true;
     }
+    compile 'me.tatarka:gradle-retrolambda:3.6.1'
 }
 crashlytics {
     enableNdk true
